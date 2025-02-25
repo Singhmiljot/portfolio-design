@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Miljot Singh Gambhir - Mechanical Design Engineer</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="images/favicon.ico" type="x-icon">
+    <link rel="icon" href="favicon.ico" type="x-icon">
 </head>
 <body>
     <div class="portfolio-content">
@@ -62,6 +62,7 @@
         </header>
 
         <main>
+            <!-- Rest of your HTML code remains the same -->
             <section id="home">
                 <video autoplay loop muted>
                     <source src="homeback.mp4" type="video/mp4">
@@ -76,242 +77,285 @@
                 </div>
             </section>
 
-            <div id="about">
-                <video src="About/aboutback.mp4" autoplay loop muted></video>
-                <div class="about-me-section">
-                    <div class="overlay">
-                        <div class="quote-container">
-                            <h2 class="quote">"The best way to predict the future is to invent it."</h2>
-                            <p class="quote-author">- Alan Kay</p>
-                            <h2 class="about-title">About Me</h2>
-                        </div>
-                    </div>
-                    <div class="text-container">
-                        <p>Mechanical Design Engineer skilled in CAD, FEA, and electro-mechanical systems. Dedicated to creating innovative, user-centric designs across industries like manufacturing and nuclear technology.</p>
-                    </div>
-                    <div class="image-container">
-                        <img src="About/image(About)1.jpg" alt="Image 1">
-                        <img src="About/image(About)2.jpg" alt="Image 2">
-                        <button id="learn-more-btn-about" class="learn-more-btn">Know More</button>
-                    </div>
-                    <div class="icon-container">
-                        <i class="fa fa-facebook"></i>
-                        <i class="fa fa-twitter"></i>
-                        <i class="fa fa-linkedin"></i>
-                    </div>
+<!-- About section -->
+<div id="about">
+  <video src="About\aboutback.mp4" autoplay loop muted></video>
+  <div class="about-me-section">
+    <div class="overlay">
+      <div class="quote-container">
+        <h2 class="quote">"The best way to predict the future is to invent it."</h2>
+        <p class="quote-author">- Alan Kay</p>
+        <h2 class="about-title">About Me</h2>
+      </div>
+    </div>
+    <div class="text-container">
+      <p>Mechanical Design Engineer skilled in CAD, FEA, and electro-mechanical systems. Dedicated to creating innovative, user-centric designs across industries like manufacturing and nuclear technology.</p>
+    </div>
+    <div class="image-container">
+      <img src="About\image(About)1.jpg" alt="Image 1">
+      <img src="About\image(About)2.jpg" alt="Image 2">
+      <button id="learn-more-btn-about" class="learn-more-btn">Know More</button>
+    </div>
+    <div class="icon-container">
+      <i class="fa fa-facebook"></i>
+      <i class="fa fa-twitter"></i>
+      <i class="fa fa-linkedin"></i>
+    </div>
+  </div>
+</div>
+
+<!-- The about modal window -->
+<div class="modal" id="about-modal" style="display: none;">
+  <div class="modal-content">
+    <span id="close-about" class="close">&times;</span>
+    <h2>About Me</h2>
+    <p>As a Mechanical Design Engineer, I thrive on transforming complex ideas into tangible solutions that meet real-world demands. With a strong foundation in CAD, FEA, and hands-on product development, I specialise in creating 3D mechanical systems and components that tackle challenges across industries, from manufacturing to automotive technology. My passion lies in the fine balance between functionality and human-centred design, ensuring every solution not only performs but also enhances user experience.
+      I believe in the power of collaboration, continuously learning, and pushing the boundaries of engineering. Whether it’s designing bespoke machinery for hazardous environments or working alongside teams to develop and resolving innovative systems, my approach is rooted in technical precision and creative problem-solving.Over the years, I have honed my skills through diverse projects, ranging from designing safety-critical mechanical systems to leading teams in the development of high-performance prototypes. My expertise spans several areas:
+
+      <ul>
+        <li>CAD & FEA: My proficiency in CAD tools and Finite Element Analysis allows me to create robust designs that are not only efficient but also safe under varying operational conditions. I’ve employed these skills in sectors requiring extreme precision, such as automobile technology and energy production.</li>
+        <li>Human-Centred Engineering: I hold a deep conviction that engineering should enhance the human experience. Every project I undertake is user-focused, ensuring that the end design seamlessly integrates into the user’s workflow or experience. This philosophy has been instrumental in developing systems that are as intuitive as they are innovative.</li>
+        <li>Cross-Industry Expertise: My career has spanned industries such as manufacturing, nuclear, and custom mechanical systems. These experiences have equipped me with the ability to navigate complex challenges, ensuring every solution is tailored to the specific needs of the industry and its end users.</li>
+        <li>Leadership & Collaboration: I enjoy working closely with interdisciplinary teams, driving projects forward from concept to implementation. My leadership has been vital in delivering on-time solutions, whether working as part of a team or independently driving project phases.</li>
+      </ul>
+
+      If you’re looking for an engineer who combines technical expertise with a passion for innovative, user-centred design, let’s connect and explore how we can bring your next project to life.</p>
+      <h3 style="margin-bottom: 5px;">Interests</h3>
+<ul style="margin-top: 0;">
+  <li>Reading</li>
+  <li>Music</li>
+  <li>Exploring</li>
+  <li>Outdoor activities</li>
+  <li>Mobile Photography</li>
+</ul>
+<div class="image-gallery">
+  <img src="About\pic1.jpg" alt="Pic 1" style="width: 30%; margin: 10px;">
+  <img src="About\pic2.jpg" alt="Pic 2" style="width: 30%; margin: 10px;">
+  <img src="About\pic3.jpg" alt="Pic 3" style="width: 30%; margin: 10px;">
+</div>
+</div>
+</div>
+
+     <!-- Education Section -->
+<section id="education" class="education-section">
+  <!-- Background Video -->
+  <div class="video-background">
+    <video autoplay loop muted>
+      <source src="education\educationback.mp4" type="video/mp4">
+    </video>
+  </div>
+
+  <!-- Education Content -->
+  <div class="education-container">
+    <h2 class="education-title">Education</h2>
+    <div class="education-grid">
+      <!-- Bachelor of Engineering -->
+      <div class="education-item">
+        <div class="education-image" style="background-image: url ('education1.jpg');"></div>
+        <div class="education-info">
+          <h3>Bachelor of Technology in Mechanical Engineering</h3>
+          <p>Dehradun Institute of Technology, India</p>
+          <p>2018 - 2022</p>
+        </div>
+        <button id="learn-more-btn-bachelor" class="learn-more-btn">Learn More</button>
+    <!-- Modal for Bachelor -->
+<div class="modal" id="education-modal" style="display: none;">
+  <div class="modal-content">
+    <span id="close-bachelor" class="close">&times;</span>
+    <h1>Bachelor of Technology in Mechanical Engineering</h1>
+    <p>Dehradun Institute of Technology, India</p>
+    <p>2018 - 2022</p>
+            <div class="education-description">
+              <h2>Description</h2>
+              <p>During my undergraduate studies, I acquired a robust foundation in mechanical and automotive engineering, focusing on the design, analysis, and application of engineering principles to automotive systems. My coursework encompassed core mechanical engineering subjects alongside specialised modules on automobile engineering, automotive system integration, and mechanical analysis.</p>
+            </div>
+            <div class="education-learnings">
+              <h2>Learnings</h2>
+              <ul> 
+                <li>Developed proficiency in CAD software like AutoCAD and SolidWorks, enhancing my skills in 3D modelling, simulations, and mechanical system designs.</li>
+                
+                <li>Gained a solid understanding of automotive engineering principles, enabling me to effectively analyse and improve vehicle performance, safety, and efficiency.</li>
+                
+                <li>Acquired hands-on experience in automotive system integration, learning how to optimise the performance of various mechanical systems within automobiles.</li>
+                
+                <li>Built a foundation in project management and teamwork through participation in Formula Student competitions, honing my ability to manage engineering projects, collaborate with cross-functional teams, and deliver solutions in fast-paced, competitive environments.</li>
+              </ul>
+            </div>
+            <div class="education-accomplishments">
+              <h2>Accomplishments</h2>
+              <ul>
+                <li>Formula Student Competition: Actively contributed to DIT Motoracing, the university's Formula Student team, where I worked on refining the braking system of a Formula-1-style car. This experience improved my understanding of high-performance vehicle dynamics and teamwork, fostering a passion for automotive innovation.</li>
+                
+                <li>Capstone Projects: Completed several design and analysis projects, including the development of a lightweight multifunction hand trolley, where I applied design for manufacturability (DFM) principles and finite element analysis (FEA) to improve durability and efficiency. These projects deepened my expertise in practical engineering applications and advanced simulation tools.</li>
+                
+                <li>Robo Wars Competition: Actively participated in the university’s annual Robo Wars competition, where I led the design and construction of a high-impact combat robot. This project enhanced my expertise in mechanical design, power transmission, and structural integrity, while refining my problem-solving abilities under pressure. The experience further developed my leadership and teamwork skills, fostering a deeper interest in innovative engineering solutions.</li>
+              </ul>
+            </div>
+            <div class="education-images">
+              <img src="education\image(edu)1.jpg" alt="Image 1">
+              <img src="education\image(edu)2.jpg" alt="Image 2">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Master of Science -->
+      <div class="education-item">
+        <div class="education-image" style="background-image: url('education2.jpg');"></div>
+        <div class="education-info">
+          <h3>Master of Science in Advanced Mechanical Engineering</h3>
+          <p>University of Sheffield, United Kingdom</p>
+          <p>2023 - 2024</p>
+        </div>
+        <button id="learn-more-btn-master" class="learn-more-btn">Learn More</button>
+     <!-- Modal for Master -->
+     <div class="modal" id="education-modal-2" style="display: none;">
+      <div class="modal-content">
+        <span id="close-master" class="close">&times;</span>
+        <h1>Master of Science in Advanced Mechanical Engineering</h1>
+        <p>University of Sheffield, United Kingdom</p>
+        <p>2023 - 2024</p>
+                <div class="education-description">
+                  <h2>Description</h2>
+                  <p>This programme provided a comprehensive understanding of advanced mechanical engineering principles, with a focus on finite element analysis (FEA), solid modelling, fluid dynamics, and design optimisation. I gained hands-on experience in utilising simulation tools like ANSYS and SolidWorks , applying engineering techniques to solve complex problems across various industries.</p>
+                </div>
+                <div class="education-learnings">
+                  <h2>Learnings</h2>
+                  <ul>
+                    <li>Acquired in-depth knowledge of FEA and CFD (Computational Fluid Dynamics) to analyse and optimise complex mechanical systems.</li>
+                    <li>Developed advanced skills in mechanical design, solid modelling, and fluid dynamics for real-world applications.</li>
+                    <li>Conducted comprehensive research on horizontal wind turbine optimisation, demonstrating proficiency in advanced simulation, CFD analysis, and sustainable engineering practices.</li>
+                    <li>Gained expertise in design optimisation techniques, ensuring designs meet performance, efficiency, and sustainability criteria.</li>
+                  </ul>
+                </div>
+                <div class="education-accomplishments">
+                  <h2>Accomplishments</h2>
+                  <ul>
+                    <li>Dissertation on Horizontal Wind Turbine Optimisation: Researched and developed optimisation techniques for wind turbine blade design, improving aerodynamic performance and power efficiency by 10%. Utilised CFD simulations and FEA in ANSYS to validate design improvements, showcasing expertise in renewable energy technologies and advanced mechanical systems.</li>
+                  </ul>
+                </div>
+                <div class="education-images">
+                  <img src="education/pic1(edu2).png" alt="Pic 1" style="width: 30%; margin: 10px;">
+                  <img src="education/pic2(educ2).png" alt="Pic 2" style="width: 30%; margin: 10px;">
+                  <img src="education/pic3(edu2).png" alt="Pic 3" style="width: 30%; margin: 10px;">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience">
+      <h2>Experience</h2>
+      <div class="experience-grid">
+        <div class="experience" onclick="location.href='experience1.html'">
+          <div class="experience-image" style="background-image: url('Experience/Clarivate_Logo.jpg'); background-size: cover; background-position: center; cursor: pointer;">
+            <div class="experience-info" style="color: #fff; background-color: rgba(0, 0, 0, 0.5); padding: 10px;">
+              <h3>Clarivate Analytics</h3>
+            </div>
+          </div>
+        </div>
+        <div class="experience" onclick="location.href='experience2.html'">
+          <div class="experience-image" style="background-image: url('Experience/3Ding.webp'); background-size: cover; background-position: center; cursor: pointer;">
+            <div class="experience-info" style="color: #fff; background-color: rgba(0, 0, 0, 0.5); padding: 10px;">
+              <h3>3Ding</h3>
+            </div>
+          </div>
+        </div>
+        <div class="experience" onclick="location.href='experience3.html'">
+          <div class="experience-image" style="background-image: url('Experience/ather-logo-1.webp'); background-size: cover; background-position: center; cursor: pointer;">
+            <div class="experience-info" style="color: #fff; background-color: rgba(0, 0, 0, 0.5); padding: 10px;">
+              <h3>ATHER</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+          <section id="projects">
+    <h2>Projects</h2>
+    <div class="project-grid">
+        <div class="project">
+            <div class="project-image" style="background-image: url('project 1/proj1back.jpeg');">
+                <div class="project-info">
+                    <h3>Lightweight Multifunction Hand Trolley</h3>
+                    <a href="project1.html" class="project-link">
+                        <span>View Project</span>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M18 13l-5 5-5-5" />
+                        </svg>
+                    </a>
                 </div>
             </div>
-
-            <div class="modal" id="about-modal" style="display: none;">
-                <div class="modal-content">
-                    <span id="close-about" class="close">&times;</span>
-                    <h2>About Me</h2>
-                    <p>As a Mechanical Design Engineer, I thrive on transforming complex ideas into tangible solutions that meet real-world demands. With a strong foundation in CAD, FEA, and hands-on product development, I specialise in creating 3D mechanical systems and components that tackle challenges across industries, from manufacturing to automotive technology. My passion lies in the fine balance between functionality and human-centred design, ensuring every solution not only performs but also enhances user experience.
-                    I believe in the power of collaboration, continuously learning, and pushing the boundaries of engineering. Whether it’s designing bespoke machinery for hazardous environments or working alongside teams to develop and resolving innovative systems, my approach is rooted in technical precision and creative problem-solving. Over the years, I have honed my skills through diverse projects, ranging from designing safety-critical mechanical systems to leading teams in the development of high-performance prototypes. My expertise spans several areas:
-                    <ul>
-                        <li>CAD & FEA: My proficiency in CAD tools and Finite Element Analysis allows me to create robust designs that are not only efficient but also safe under varying operational conditions. I’ve employed these skills in sectors requiring extreme precision, such as automobile technology and energy production.</li>
-                        <li>Human-Centred Engineering: I hold a deep conviction that engineering should enhance the human experience. Every project I undertake is user-focused, ensuring that the end design seamlessly integrates into the user’s workflow or experience. This philosophy has been instrumental in developing systems that are as intuitive as they are innovative.</li>
-                        <li>Cross-Industry Expertise: My career has spanned industries such as manufacturing, nuclear, and custom mechanical systems. These experiences have equipped me with the ability to navigate complex challenges, ensuring every solution is tailored to the specific needs of the industry and its end users.</li>
-                        <li>Leadership & Collaboration: I enjoy working closely with interdisciplinary teams, driving projects forward from concept to implementation. My leadership has been vital in delivering on-time solutions, whether working as part of a team or independently driving project phases.</li>
-                    </ul>
-                    If you’re looking for an engineer who combines technical expertise with a passion for innovative, user-centred design, let’s connect and explore how we can bring your next project to life.</p>
-                    <h3 style="margin-bottom: 5px;">Interests</h3>
-                    <ul style="margin-top: 0;">
-                        <li>Reading</li>
-                        <li>Music</li>
-                        <li>Exploring</li>
-                        <li>Outdoor activities</li>
-                        <li>Mobile Photography</li>
-                    </ul>
-                    <div class="image-gallery">
-                        <img src="About/pic1.jpg" alt="Pic 1" style="width: 30%; margin: 10px;">
-                        <img src="About/pic2.jpg" alt="Pic 2" style="width: 30%; margin: 10px;">
-                        <img src="About/pic3.jpg" alt="Pic 3" style="width: 30%; margin: 10px;">
-                    </div>
+        </div>
+        <div class="project">
+            <div class="project-image" style="background-image: url('Project 2/pro2cover.jpeg');">
+                <div class="project-info">
+                    <h3>Prospects of Utilizing Carbon Fiber in the United Kingdom Public Transportation</h3>
+                    <a href="project2.html" class="project-link">
+                        <span>View Project</span>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="cover" stroke="currentColor" stroke-width="2">
+                            <path d="M18 13l-5 5-5-5" />
+                        </svg>
+                    </a>
                 </div>
             </div>
-
-            <section id="education" class="education-section">
-                <div class="video-background">
-                    <video autoplay loop muted>
-                        <source src="education/educationback.mp4" type="video/mp4">
-                    </video>
+        </div>
+        <div class="project">
+          <div class="project-image" style="background-image: url('project 3/projback.jpeg');">
+              <div class="project-info">
+                  <h3>Static Structural Analysis of Elastomeric Engine Mount: A Comprehensive Study on Deformation Evolution Due to Ageing</h3>
+                  <a href="project3.html" class="project-link">
+                      <span>View Project</span>
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                          <path d="M18 13l-5 5-5-5" />
+                      </svg>
+                  </a>
+              </div>
+          </div>
+      </div>
+        <div class="project">
+            <div class="project4 project-image">
+                <div class="project-info">
+                    <h3>Optimising Horizontal Wind Turbine Design Concepts</h3>
+                    <a href="project4.html" class="project-link">
+                        <span>View Project</span>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M18 13l-5 5-5-5" />
+                        </svg>
+                    </a>
                 </div>
-                <div class="education-container">
-                    <h2 class="education-title">Education</h2>
-                    <div class="education-grid">
-                        <div class="education-item">
-                            <div class="education-image" style="background-image: url('education1.jpg');"></div>
-                            <div class="education-info">
-                                <h3>Bachelor of Technology in Mechanical Engineering</h3>
-                                <p>Dehradun Institute of Technology, India</p>
-                                <p>2018 - 2022</p>
-                            </div>
-                            <button id="learn-more-btn-bachelor" class="learn-more-btn">Learn More</button>
-                            <div class="modal" id="education-modal" style="display: none;">
-                                <div class="modal-content">
-                                    <span id="close-bachelor" class="close">&times;</span>
-                                    <h1>Bachelor of Technology in Mechanical Engineering</h1>
-                                    <p>Dehradun Institute of Technology, India</p>
-                                    <p>2018 - 2022</p>
-                                    <div class="education-description">
-                                        <h2>Description</h2>
-                                        <p>During my undergraduate studies, I acquired a robust foundation in mechanical and automotive engineering, focusing on the design, analysis, and application of engineering principles to automotive systems. My coursework encompassed core mechanical engineering subjects alongside specialised modules on automobile engineering, automotive system integration, and mechanical analysis.</p>
-                                    </div>
-                                    <div class="education-learnings">
-                                        <h2>Learnings</h2>
-                                        <ul> 
-                                            <li>Developed proficiency in CAD software like AutoCAD and SolidWorks, enhancing my skills in 3D modelling, simulations, and mechanical system designs.</li>
-                                            <li>Gained a solid understanding of automotive engineering principles, enabling me to effectively analyse and improve vehicle performance, safety, and efficiency.</li>
-                                            <li>Acquired hands-on experience in automotive system integration, learning how to optimise the performance of various mechanical systems within automobiles.</li>
-                                            <li>Built a foundation in project management and teamwork through participation in Formula Student competitions, honing my ability to manage engineering projects, collaborate with cross-functional teams, and deliver solutions in fast-paced, competitive environments.</li>
-                                        </ul>
-                                    </div>
-                                    <div class="education-accomplishments">
-                                        <h2>Accomplishments</h2>
-                                        <ul>
-                                            <li>Formula Student Competition: Actively contributed to DIT Motoracing, the university's Formula Student team, where I worked on refining the braking system of a Formula-1-style car. This experience improved my understanding of high-performance vehicle dynamics and teamwork, fostering a passion for automotive innovation.</li>
-                                            <li>Capstone Projects: Completed several design and analysis projects, including the development of a lightweight multifunction hand trolley, where I applied design for manufacturability (DFM) principles and finite element analysis (FEA) to improve durability and efficiency. These projects deepened my expertise in practical engineering applications and advanced simulation tools.</li>
-                                            <li>Robo Wars Competition: Actively participated in the university’s annual Robo Wars competition, where I led the design and construction of a high-impact combat robot. This project enhanced my expertise in mechanical design, power transmission, and structural integrity, while refining my problem-solving abilities under pressure. The experience further developed my leadership and teamwork skills, fostering a deeper interest in innovative engineering solutions.</li>
-                                        </ul>
-                                    </div>
-                                    <div class="education-images">
-                                        <img src="education/image(edu)1.jpg" alt="Image 1">
-                                        <img src="education/image(edu)2.jpg" alt="Image 2">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="education-item">
-                            <div class="education-image" style="background-image: url('education2.jpg');"></div>
-                            <div class="education-info">
-                                <h3>Master of Science in Advanced Mechanical Engineering</h3>
-                                <p>University of Sheffield, United Kingdom</p>
-                                <p>2023 - 2024</p>
-                            </div>
-                            <button id="learn-more-btn-master" class="learn-more-btn">Learn More</button>
-                            <div class="modal" id="education-modal-2" style="display: none;">
-                                <div class="modal-content">
-                                    <span id="close-master" class="close">&times;</span>
-                                    <h1>Master of Science in Advanced Mechanical Engineering</h1>
-                                    <p>University of Sheffield, United Kingdom</p>
-                                    <p>2023 - 2024</p>
-                                    <div class="education-description">
-                                        <h2>Description</h2>
-                                        <p>This programme provided a comprehensive understanding of advanced mechanical engineering principles, with a focus on finite element analysis (FEA), solid modelling, fluid dynamics, and design optimisation. I gained hands-on experience in utilising simulation tools like ANSYS and SolidWorks, applying engineering techniques to solve complex problems across various industries.</p>
-                                    </div>
-                                    <div class="education-learnings">
-                                        <h2>Learnings</h2>
-                                        <ul>
-                                            <li>Acquired in-depth knowledge of FEA and CFD (Computational Fluid Dynamics) to analyse and optimise complex mechanical systems.</li>
-                                            <li>Developed advanced skills in mechanical design, solid modelling, and fluid dynamics for real-world applications.</li>
-                                            <li>Conducted comprehensive research on horizontal wind turbine optimisation, demonstrating proficiency in advanced simulation, CFD analysis, and sustainable engineering practices.</li>
-                                            <li>Gained expertise in design optimisation techniques, ensuring designs meet performance, efficiency, and sustainability criteria.</li>
-                                        </ul>
-                                    </div>
-                                    <div class="education-accomplishments">
-                                        <h2>Accomplishments</h2>
-                                        <ul>
-                                            <li>Dissertation on Horizontal Wind Turbine Optimisation: Researched and developed optimisation techniques for wind turbine blade design, improving aerodynamic performance and power efficiency by 10%. Utilised CFD simulations and FEA in ANSYS to validate design improvements, showcasing expertise in renewable energy technologies and advanced mechanical systems.</li>
-                                        </ul>
-                                    </div>
-                                    <div class="education-images">
-                                        <img src="education/pic1(edu2).png" alt="Pic 1" style="width: 30%; margin: 10px;">
-                                        <img src="education/pic2(educ2).png" alt="Pic 2" style="width: 30%; margin: 10px;">
-                                        <img src="education/pic3(edu2).png" alt="Pic 3" style="width: 30%; margin: 10px;">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+            </div>
+        </div>
+        <div class="project">
+            <div class="project5 project-image">
+                <div class="project-info">
+                    <h3>Recreating the Classic: Mercedes-Benz SL 300 Design in Fusion 360</h3>
+                    <a href="project5.html" class="project-link">
+                        <span>View Project</span>
+                        <svg width="24 " height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M18 13l-5 5-5-5" />
+                        </svg>
+                    </a>
                 </div>
-            </section>
-
-            <section id="experience">
-                <h2>Experience</h2>
-                <div class="experience-grid">
-                    <div class="experience" onclick="location.href='experience1.html'">
-                        <div class="experience-image" style="background-image: url('Experience/Clarivate_Logo.jpg'); background-size: cover; background-position: center; cursor: pointer;">
-                            <div class="experience-info" style="color: #fff; background-color: rgba(0, 0, 0, 0.5); padding: 10px;">
-                                <h3>Clarivate Analytics</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="experience" onclick="location.href='experience2.html'">
-                        <div class="experience-image" style="background-image: url('Experience/3Ding.webp'); background-size: cover; background-position: center; cursor: pointer;">
-                            <div class="experience-info" style="color: #fff; background-color: rgba(0, 0, 0, 0.5); padding: 10px;">
-                                <h3>3Ding</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="experience" onclick="location.href='experience3.html'">
-                        <div class="experience-image" style="background-image: url('Experience/ather-logo-1.webp'); background-size: cover; background-position: center; cursor: pointer;">
-                            <div class="experience-info" style="color: #fff; background-color: rgba(0, 0, 0, 0.5); padding: 10px;">
-                                <h3>ATHER</h3>
-                            </div>
-                        </div>
-                    </div>
+            </div>
+        </div>
+        <div class="project">
+            <div class="project-image" style="background-image: url('project 6/projback.jpg');">
+                <div class="project-info">
+                    <h3>Development of a Mechanical Design for a 3D Printer</h3>
+                    <a href="project6.html" class="project-link">
+                        <span>View Project</span>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M18 13l-5 5-5-5" />
+                        </svg>
+                    </a>
                 </div>
-            </section>
-
-            <section id="projects">
-                <h2>Projects</h2>
-                <div class="project-grid">
-                    <div class="project">
-                        <div class="project-image" style="background-image: url('project 1/proj1back.jpeg');">
-                            <div class="project-info">
-                                <h3>Lightweight Multifunction Hand Trolley</h3>
-                                <a href="project1.html" class="project-link">
-                                    <span>View Project</span>
-                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                        <path d="M18 13l-5 5-5-5" />
-                                    </svg>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project">
-                        <div class="project-image" style="background-image: url('Project 2/pro2cover.jpeg');">
-                            <div class="project-info">
-                                <h3>Prospects of Utilizing Carbon Fiber in the United Kingdom Public Transportation</h3>
-                                <a href="project2.html" class="project-link">
-                                    <span>View Project</span>
-                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="cover" stroke="currentColor" stroke-width="2">
-                                        <path d="M18 13l-5 5-5-5" />
-                                    </svg>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project">
-                        <div class="project-image" style="background-image: url('project 3/projback.jpeg');">
-                            <div class="project-info">
-                                <h3>Static Structural Analysis of Elastomeric Engine Mount: A Comprehensive Study on Deformation Evolution Due to Ageing</h3>
-                                <a href="project3.html" class="project-link">
-                                    <span>View Project</span>
-                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                        <path d="M18 13l-5 5-5-5" />
-                                    </svg>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project">
-                        <div class="project-image" style="background-image: url('project 6/projback.jpg');">
-                            <div class="project-info">
-                                <h3>Development of a Mechanical Design for a 3D Printer</h3>
-                                <a href="project6.html" class="project-link">
-                                    <span>View Project</span>
-                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                        <path d="M18 13l-5 5-5-5" />
-                                    </svg>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+            </div>
+        </div>
+    </div>
+</section>
 
             <section id="contact">
                 <h2>Get in Touch</h2>
@@ -321,8 +365,7 @@
                         <p><strong>Name:</strong> Miljot Singh Gambhir</p>
                         <p><strong>Email:</strong> <a href="mailto:miljotsinghgambhir@gmail.com">miljotsinghgambhir@gmail.com</a></p>
                         <p><strong>Phone:</strong> <a href="tel:+447984304616">+44 7984304616</a></p>
-                        <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/miljotsinghgambhir/" target="_blank">Miljot Singh Gambhir</a></p>
-                    </div>
+                        <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/miljotsinghgambhir/" target="_blank">Miljot Singh Gambhir</a></p>                    </div>
                     <div class="contact-form">
                         <h3>Send a Message</h3>
                         <form action="https://formspree.io/f/mkgwleod" method="POST">
@@ -338,13 +381,14 @@
                                 <label for="message">Message:</label>
                                 <textarea name="message" id="message" placeholder="Your Message"></textarea>
                             </div>
-                            <button type="submit">Send</button>
+                            <button type=" submit">Send</button>
                         </form>
                     </div>
                 </div>
             </section>
             
             <button class="back-to-top">Back to Top</button>
+
         </main>
 
         <script src="script.js"></script>
