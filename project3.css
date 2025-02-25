@@ -1,0 +1,239 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+    color: #fff;
+}
+
+.top-nav {
+    background-color: rgba(68, 68, 68, 0.9);
+    padding: 1em;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Add this new class for hiding the nav */
+.nav-hidden {
+    transform: translateY(-100%);
+}
+
+/* When nav is hidden, show it on hover near top of page */
+.nav-hidden:hover {
+    transform: translateY(0);
+}
+
+.top-nav-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-left h1 {
+    margin: 0;
+    font-size: 1.5em;
+    color: #fff;
+}
+
+.title-designation {
+    font-size: 0.7em;
+    color: #ccc;
+    display: block;
+    margin-top: 0.2em;
+}
+
+.nav-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.nav-list a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem;
+    transition: color 0.3s ease;
+}
+
+.nav-list a:hover,
+.nav-list a:focus {
+    color: #4CAF50;
+}
+
+.resume-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.resume-btn:hover,
+.resume-btn:focus {
+    background-color: #45a049;
+}
+
+.mobile-menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .nav-list {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: rgba(68, 68, 68, 0.95);
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .nav-list.active {
+        display: flex;
+    }
+
+    .mobile-menu-toggle {
+        display: block;
+    }
+
+    .hamburger-icon {
+        display: block;
+        width: 25px;
+        height: 3px;
+        background-color: white;
+        position: relative;
+    }
+
+    .hamburger-icon::before,
+    .hamburger-icon::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: white;
+        transition: transform 0.3s ease;
+    }
+
+    .hamburger-icon::before {
+        transform: translateY(-8px);
+    }
+
+    .hamburger-icon::after {
+        transform: translateY(8px);
+    }
+}
+
+/* Container for images */
+.project3-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    padding: 10px;
+    margin: 0;
+}
+
+.project3-box {
+    background-color: #fff;
+    padding: 0;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    overflow: hidden;
+    position: relative;
+    height: 200px; /* Set the height of each project */
+}
+
+.project3-box img {
+    width: 100%;
+    height: 100%; /* Set the height of each image to 100% of the project height */
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    object-fit: cover;
+    transition: transform 0.2s ease-in-out;
+}
+
+.project3-box img:hover {
+    transform: scale(1.1);
+}
+
+.project3-title {
+    font-size: 18px; /* Adjust font size to match other project titles */
+    font-weight: bold;
+    color: #fff; /* Change text color to white for better contrast */
+    position: absolute;
+    bottom: 10px; /* Set to position it above the bottom */
+    left: 10px; /* Add some left padding */
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background for better readability */
+    width: calc(100% - 20px); /* Ensure it fits within the box with padding */
+    text-align: left; /* Align text to the left */
+}
+
+.project3 {
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    background-image: url('images/project 3/projback.jpeg');
+}
+
+.back-to-home {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.back-to-top:hover,
+.back-to-home:hover {
+    background-color: #555;
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 768px) {
+    .project3-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .project3-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
